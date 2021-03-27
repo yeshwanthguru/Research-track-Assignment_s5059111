@@ -16,11 +16,11 @@ The non holonomic robot(gazebo) should be working as following below,
 
 0. `/Controller` node calls for `/random_target` in order to get random target position among [(-4,-3),(-4,2),(-4,7),(5,-7),(5,-3),(5,1)], and publishes the target position for `/move_base`. After that, the robot starts to move for target.
 
-1. When the robot arrives the target, node calls for `/final_user_interface`. Next, `/ask_user_interface` node asks the request on command line. and check if the request position is feasible(among [(-4,-3),(-4,2),(-4,7),(5,-7),(5,-3),(5,1)]) or not. And if it is ok, updates the target position and publishes the target position for `/move_base`. (If it's not feasible target, `/final_user_interface` asks again) After that, the robot starts to move for target same as state 0.
+1. When the robot arrives the target, node calls for `/final_user_req`. Next, `/ask_user_interface` node asks the request on command line. and check if the request position is feasible(among [(-4,-3),(-4,2),(-4,7),(5,-7),(5,-3),(5,1)]) or not. And if it is ok, updates the target position and publishes the target position for `/move_base`. (If it's not feasible target, `/final_user_interface` asks again) After that, the robot starts to move for target same as state 0.
 
 2. When the robot arrives the target,  node calls for `wall_follower`. and after the robot run around the map, it switches to state3.
 
-3. When the robot arrives the target `/final_user_interface` gave, the robot stops.
+3. When the robot arrives the target `/final_user_req` gave, the robot stops.
 
 ## Software architecture
 The blue part is user interface. By using this module, I can interact with the robot controller by setting some parameters (in this caes, setting the target position).
@@ -61,7 +61,7 @@ rosrun final_assignment wall_follow_service_m.py
                    ||||||||||
 rosrun my_srv finalassignment_server
                     |||||||||
-rosrun final_assignment final_user_interface.py
+rosrun final_assignment final_user_req.py
                     |||||||||
 For computational graph of the system,
                     |||||||||
