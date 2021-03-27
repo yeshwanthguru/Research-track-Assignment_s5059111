@@ -51,8 +51,8 @@ In this system,the robot is moving for target while creating the map by SLAM alg
 In this system, the robot cannot avoid moving obstacles. But in real environments, we always need to consider moving obstacles. So I have to learn the algorithm and technique which enables robot to move safely even in dynamic environments.
 
 ## Instructions about how to run the code
-                 ASSIGNMENT 2
-                   ||||||||||
+                                               ASSIGNMENT 2
+                   
 roslaunch final_assignment simulation_gmapping.launch (to turn on Gazebo and rviz)
                    ||||||||||
 roslaunch final_assignment move_base.launch
