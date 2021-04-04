@@ -1,6 +1,6 @@
 #include "ros/ros.h"
 #include "my_srv2/Random.h"
-#include<math.h>
+
 
 // create random numbers
  double randMToN(double M, double N)
