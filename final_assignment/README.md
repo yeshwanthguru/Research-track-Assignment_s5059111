@@ -16,7 +16,7 @@ The non holonomic robot(gazebo) should be working as following below,
 
 0. `/Controller` node calls for `/random_target` in order to get random target position among [(-4,-3),(-4,2),(-4,7),(5,-7),(5,-3),(5,1)], and publishes the target position for `/move_base`. After that, the robot starts to move for target.
 
-1. When the robot arrives the target, node calls for `/final_user_req`. Next, `/ask_user_interface` node asks the request on command line. and check if the request position is feasible(among [(-4,-3),(-4,2),(-4,7),(5,-7),(5,-3),(5,1)]) or not. And if it is ok, updates the target position and publishes the target position for `/move_base`. (If it's not feasible target, `/final_user_interface` asks again) After that, the robot starts to move for target same as state 0.
+1. When the robot arrives the target, node calls for `/final_user_req`. Next, `/ask_user_req` node asks the request on command line. and check if the request position is feasible(among [(-4,-3),(-4,2),(-4,7),(5,-7),(5,-3),(5,1)]) or not. And if it is ok, updates the target position and publishes the target position for `/move_base`. (If it's not feasible target, `/final_user_req` asks again) After that, the robot starts to move for target same as state 0.
 
 2. When the robot arrives the target,  node calls for `wall_follower`. and after the robot run around the map, it switches to state3.
 
