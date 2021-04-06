@@ -30,7 +30,7 @@ The red parts are the ones which implements the actulal robot controller. it pro
 All the green components represent the section of the system which simulate the robot and its physical interaction with the environment.
 The simulation is done in following steps:
 
-1.For the first step, final_user_req.py node requests my_srv for a random target position between the range of 1 to 6.Then,the main node publishes the target positions to /move_base/goal and check thes the status of goal by subscribing to the topic /move_base/status.When the robot reaches the target and the status of robot is displayed, the main node requests the user to input again.
+1.For the first step, human_machine_interface.py node requests my_srv for a random target position between the range of 1 to 6.Then,the main node publishes the target positions to /move_base/goal and check thes the status of goal by subscribing to the topic /move_base/status.When the robot reaches the target and the status of robot is displayed, the main node requests the user to input again.
 
 2.For the second step, the user chooses one out of six possible target positions and publishes it to /move_base/goal.
 
@@ -61,7 +61,7 @@ rosrun final_assignment wall_follow_service_m.py
                    ||||||||||
 rosrun my_srv finalassignment_server
                     |||||||||
-rosrun final_assignment final_user_req.py
+rosrun final_assignment human_machine_interface.py
                     |||||||||
 For computational graph of the system,
                     |||||||||
