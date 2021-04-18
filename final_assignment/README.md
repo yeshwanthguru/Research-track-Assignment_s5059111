@@ -74,6 +74,16 @@ These are all the codes flow chart to run the over all process:
                 $                                                             $
                 $             rosrun rqt_graph rqt_graph                      $
                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                
+   ![1](https://user-images.githubusercontent.com/72270080/115137321-01ce8080-a015-11eb-8a94-c68f072d8b25.png)             
+                
+               
+   ![2](https://user-images.githubusercontent.com/72270080/115137319-0135ea00-a015-11eb-8e47-8b8fecc43a9b.png)
+  
+  
+   ![3](https://user-images.githubusercontent.com/72270080/115137318-0004bd00-a015-11eb-9314-70e47233ff1a.png)
+
+
 
 And for the human_machine_interface.py example i have attached for the initial understanding purpose to knew the interface model for initial users.
 
@@ -153,6 +163,9 @@ Robot is following the wall.
 click on the robot controller interface: 4
 
 Robot  finished.
+
+
+This is the model of thr mobile robot controller interface.
 
 
 
