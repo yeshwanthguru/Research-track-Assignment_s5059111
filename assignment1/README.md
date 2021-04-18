@@ -16,11 +16,11 @@ And regarding service nodes, the node `/assignmet1` requests generating new rand
              $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
              $$$$$$$$$$$$$$$$$$$$$$$$$$$$roscore(master)$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
              $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-             $rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world$
+             $rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world$(to turn on the packag simulator)
              $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-             $$$$$$$$$$$$$$$$$$$$rosrun my_srv2 random_target$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+             $$$$$$$$$$$$$$$$$$$$rosrun my_srv2 random_target$$$$$$$$$$$$$$$$$$$$$$$$$$$$(srv2)
              $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-             $$$$$$$$$$$$$$$$$$$$$rosrun assignment1 assignment1$$$$$$$$$$$$$$$$$$$$$$$$$
+             $$$$$$$$$$$$$$$$$$$$$rosrun assignment1 assignment1$$$$$$$$$$$$$$$$$$$$$$$$$(to initiate the node)
              $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
  
 
