@@ -26,3 +26,4 @@ And regarding service nodes, the node `/assignmet1` requests generating new rand
 
 
 
+![rosgraph](https://user-images.githubusercontent.com/72270080/115137937-8969be80-a018-11eb-9177-011835c3f22a.png)
