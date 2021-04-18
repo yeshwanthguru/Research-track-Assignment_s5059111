@@ -75,6 +75,14 @@ These are all the codes flow chart to run the over all process:
                 $             rosrun rqt_graph rqt_graph                      $
                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
+![1](https://user-images.githubusercontent.com/72270080/115137605-95ed1780-a016-11eb-93d8-e57c716c22d8.png)
+
+![2](https://user-images.githubusercontent.com/72270080/115137613-a1404300-a016-11eb-8986-385f855284bf.png)
+
+![3](https://user-images.githubusercontent.com/72270080/115137621-a9987e00-a016-11eb-8c9c-58399fd09cee.png)
+
+
+
 And for the human_machine_interface.py example i have attached for the initial understanding purpose to knew the interface model for initial users.
 
 
